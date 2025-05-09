@@ -32,6 +32,7 @@ image = cv2.imread('0.png')
 #image = frame
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 detections = detector.detect(gray_image)
-print(detections)
+for i in detections:
+    print(i.tag_id)
 print(type(detections))
 #cap.release()
