@@ -22,15 +22,15 @@ detector = Detector(
 #cap = cv2.VideoCapture(0)
 image = cv2.imread('0.png')
 
-if not cap.isOpened():
-    print("无法打开摄像头")
-else:
-    ret, frame = cap.read()
-if not ret:
-    print("无法获取帧")
-else:
-    image = frame
-    gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    detections = detector.detect(gray_image)
-    print(detections)
-cap.release()
+#if not cap.isOpened():
+    #print("无法打开摄像头")
+#else:
+    #ret, frame = cap.read()
+#if not ret:
+    #print("无法获取帧")
+#else:
+#image = frame
+gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+detections = detector.detect(gray_image)
+print(detections)
+#cap.release()
