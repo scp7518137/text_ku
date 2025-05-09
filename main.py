@@ -19,7 +19,8 @@ detector = Detector(
 )
 
 
-cap = cv2.VideoCapture(0)
+#cap = cv2.VideoCapture(0)
+image = cv2.imread('0.png')
 
 if not cap.isOpened():
     print("无法打开摄像头")
